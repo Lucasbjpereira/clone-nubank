@@ -9,6 +9,7 @@ import androidx.navigation.compose.composable
 import com.clonenubank.ui.screens.home.HomeScreen
 import com.clonenubank.ui.theme.CloneNubankTheme
 import com.clonenubank.ui.InitialScreen
+import com.clonenubank.ui.screens.login.LoginScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,11 +21,18 @@ class MainActivity : ComponentActivity() {
                     composable("tela_inicial") {
                         InitialScreen(
                             nome = "Cliente",
-                            onVerSaldoClick = { navController.navigate("tela_detalhes") }
+                            onVerSaldoClick = { navController.navigate("login") }
                         )
                     }
-                    composable("tela_detalhes") {
-                        HomeScreen()
+                    composable("login") {
+                        // Passa o contexto e a ação de sucesso de login para LoginScreen
+                        LoginScreen(
+                            context = this@MainActivity,
+                            onLoginSuccess = { navController.navigate("home") }
+                        )
+                    }
+                    composable("home") {
+                        HomeScreen() // Implementação da HomeScreen
                     }
                 }
             }
