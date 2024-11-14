@@ -38,7 +38,7 @@ fun TelaDetalhes() {
             content = {
                 item { Spacer(modifier = Modifier.height(16.dp)) }
 
-                item { SectionConta(saldo = "€3.240,22") }
+                item { SectionConta(saldo = "R$ 3.240,22") }
 
                 item { Spacer(modifier = Modifier.height(16.dp)) }
 
@@ -78,7 +78,7 @@ fun Header() {
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "Olá, Felipe Santana",
+            text = "Olá, Cliente",
             color = Color.White,
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp
