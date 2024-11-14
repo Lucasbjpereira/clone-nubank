@@ -30,7 +30,7 @@ fun LoginScreen(context: Context, onLoginSuccess: () -> Unit) {
     var password by remember { mutableStateOf(TextFieldValue("")) }
     var showErrorToast by remember { mutableStateOf(false) }
     var isLoading by remember { mutableStateOf(false) }
-    val coroutineScope = rememberCoroutineScope()
+    val coroutineScope = rememberCoroutineScope();
 
     // Referência ao SharedPreferences
     val sharedPreferences = context.getSharedPreferences("login_data", Context.MODE_PRIVATE)

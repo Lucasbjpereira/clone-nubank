@@ -36,6 +36,9 @@ $ cd clone-nubank
 - Conecte um dispositivo Android ou configure um emulador.
 - Clique no botão **Run** (🏃️) para instalar e executar o app.
 
+### Alternativamente, Baixe diretamente o APK 📱
+- Navegue até a pasta **apk** para baixar e testar o app diretamente em seu dispositivo.
+
 ## 💻 Tecnologias Utilizadas
 - **Kotlin**: Linguagem de programação principal.
 - **Jetpack Compose**: Criação da interface de usuário declarativa.

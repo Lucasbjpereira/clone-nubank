@@ -8,7 +8,6 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
 import com.clonenubank.ui.screens.home.HomeScreen
 import com.clonenubank.ui.theme.CloneNubankTheme
-import com.clonenubank.ui.InitialScreen
 import com.clonenubank.ui.screens.login.LoginScreen
 
 class MainActivity : ComponentActivity() {
@@ -17,13 +16,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CloneNubankTheme {
                 val navController = rememberNavController()
-                NavHost(navController = navController, startDestination = "tela_inicial") {
-                    composable("tela_inicial") {
-                        InitialScreen(
-                            nome = "Cliente",
-                            onVerSaldoClick = { navController.navigate("login") }
-                        )
-                    }
+                NavHost(navController = navController, startDestination = "login") {
                     composable("login") {
                         // Passa o contexto e a ação de sucesso de login para LoginScreen
                         LoginScreen(
