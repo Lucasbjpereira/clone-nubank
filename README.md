@@ -45,7 +45,7 @@ $ cd clone-nubank
 
 | Tela Inicial         | Detalhes do Saldo     |
 |----------------------|-----------------------|
-| ![Tela Inicial](images/tela_inicial.png) | ![Saldo](images/saldo.png)   |
+| ![Tela Inicial](https://raw.githubusercontent.com/Lucasbjpereira/clone-nubank/refs/heads/main/screenshots/screen1.png) | ![Saldo](https://raw.githubusercontent.com/Lucasbjpereira/clone-nubank/refs/heads/main/screenshots/screen2.png)   |
 
 ## 💎 Contribuições
 - Fork o repositório 🛠️
