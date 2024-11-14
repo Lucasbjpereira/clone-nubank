@@ -6,9 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.composable
-import com.clonenubank.ui.TelaDetalhes
+import com.clonenubank.ui.screens.home.HomeScreen
 import com.clonenubank.ui.theme.CloneNubankTheme
-import com.clonenubank.ui.TelaInicialNubank
+import com.clonenubank.ui.InitialScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,13 +18,13 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "tela_inicial") {
                     composable("tela_inicial") {
-                        TelaInicialNubank(
+                        InitialScreen(
                             nome = "Cliente",
                             onVerSaldoClick = { navController.navigate("tela_detalhes") }
                         )
                     }
                     composable("tela_detalhes") {
-                        TelaDetalhes()
+                        HomeScreen()
                     }
                 }
             }

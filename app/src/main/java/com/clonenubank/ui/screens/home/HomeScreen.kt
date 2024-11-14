@@ -1,11 +1,9 @@
-package com.clonenubank.ui
+package com.clonenubank.ui.screens.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBalanceWallet
 import androidx.compose.material.icons.filled.ReceiptLong
@@ -24,8 +22,11 @@ import androidx.compose.ui.unit.sp
 import com.clonenubank.ui.theme.roxoNubank
 import androidx.compose.foundation.lazy.LazyColumn
 
+
+val num: Int = 5
+
 @Composable
-fun TelaDetalhes() {
+fun HomeScreen() {
     Column(modifier = Modifier
         .fillMaxSize()
         .background(Color.White)) {

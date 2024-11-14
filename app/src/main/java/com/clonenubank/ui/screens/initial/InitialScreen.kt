@@ -14,7 +14,7 @@ import com.clonenubank.ui.theme.roxoNubank
 import com.clonenubank.ui.comum.BotaoComum
 
 @Composable
-fun TelaInicialNubank(
+fun InitialScreen(
     nome: String,
     onVerSaldoClick: () -> Unit
 ) {
